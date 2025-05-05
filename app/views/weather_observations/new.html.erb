@@ -1,0 +1,11 @@
+<% content_for :title, "New weather observation" %>
+
+<h1>New weather observation</h1>
+
+<%= render "form", weather_observation: @weather_observation %>
+
+<br>
+
+<div>
+  <%= link_to "Back to weather observations", weather_observations_path %>
+</div>

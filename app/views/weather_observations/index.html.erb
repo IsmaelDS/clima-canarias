@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Weather observations" %>
+
+<h1>Weather observations</h1>
+
+<div id="weather_observations">
+  <% @weather_observations.each do |weather_observation| %>
+    <%= render weather_observation %>
+    <p>
+      <%= link_to "Show this weather observation", weather_observation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New weather observation", new_weather_observation_path %>

@@ -1,0 +1,37 @@
+<%= form_with(model: weather_observation) do |form| %>
+  <% if weather_observation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(weather_observation.errors.count, "error") %> prohibited this weather_observation from being saved:</h2>
+
+      <ul>
+        <% weather_observation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :weather_station_id, style: "display: block" %>
+    <%= form.text_field :weather_station_id %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :avg_temp, style: "display: block" %>
+    <%= form.text_field :avg_temp %>
+  </div>
+
+  <div>
+    <%= form.label : , style: "display: block" %>
+    <%= form.text_field :  %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

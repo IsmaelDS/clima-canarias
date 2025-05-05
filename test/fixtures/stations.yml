@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  name: MyString
+  province: MyString
+  altitude: 1
+  latitude: MyString
+  longitude: MyString
+  synop_code: MyString
+
+two:
+  code: MyString
+  name: MyString
+  province: MyString
+  altitude: 1
+  latitude: MyString
+  longitude: MyString
+  synop_code: MyString
