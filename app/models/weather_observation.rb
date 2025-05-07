@@ -1,3 +1,3 @@
 class WeatherObservation < ApplicationRecord
-  belongs_to :weather_station
+  belongs_to :station
 end
